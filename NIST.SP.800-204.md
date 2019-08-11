@@ -139,7 +139,8 @@ ITLは、この出版物の使用における特許侵害を回避するため�
 モノリシックアプリケーションでは、各コンポーネント(プロシージャまたは関数)は、メソッドや関数などの言語レベルの呼び出しを使用して別のコンポーネントを呼び出します。 マイクロサービスベースのアプリケーションでは、各サービスは通常、プロセス間通信メカニズム(IPC)[7]を介して他のサービスと通信する独自のネットワークノードで実行されるプロセスです。 さらに、サービスはインターフェイス定義言語(IDL)(Swagger / OpenAPIなど)を使用して定義されるため、アプリケーションプログラミングインターフェイス(API)と呼ばれる成果物が生成されます。 サービス開発の最初のステップでは、インターフェイス定義を作成します。これは、クライアント開発者がレビューし、サービスの実装が開始される前に何度も繰り返されます。 したがって、APIはクライアントとサービスの間のコントラクトとして機能します。
 IPCメカニズムの選択により、APIの性質が決まります[7]。 表1は、各IPCメカニズムのAPI定義の性質を示しています。 
 
-Table 1: IPC Mechanisms and API Types
+Table 1: IPC Mechanisms and API Types  
+
 |IPCメカニズム|API定義の性質|
 |:---|:---|
 |非同期、メッセージベース(例:Advanced Message Queuingプロトコル(AMQP)またはシンプル(またはストリーミング)テキスト指向のメッセージングプロトコル。(STOMP))|メッセージチャネルとメッセージタイプで構成|
@@ -197,7 +198,8 @@ APIゲートウェイまたはマイクロゲートウェイは、通常、次�
 
 マイクロサービスベースのアプリケーションシステムの動作環境におけるこれらのフレームワークの役割を表2 [4]に示します。  
 
-Table 2: Role of Architectural Frameworks in Microservices Operations
+Table 2: Role of Architectural Frameworks in Microservices Operations  
+
 |Architectural Framework|全体的なアーキテクチャでの役割|
 |:---|:---|
 |APIゲートウェイ(マイクロゲートウェイありまたはなし)|南北および東西のトラフィックの制御に使用|
@@ -585,28 +587,27 @@ Table 6: Security Strategies for Microservices
 [2] Richardson C, Smith F (2016) Microservices: From design to deployment (NGINX Inc.). 
 Available at https://www.nginx.com/resources/library/designing-deploying- microservices/   
 [3] TechTarget (n.d.) Comparing two schools of application development: Traditional vs. 
-Cloud-Native. Available at https://searchcloudcomputing.techtarget.com/PaaS/Comparing-Two-Schools-of- Application-Development-Traditional-vs-Cloud-Native 
-[4] Richardson C (2015) Building microservices: Using an API gateway. Available at https://www.nginx.com/blog/building-microservices-using-an-api-gateway/ 
+Cloud-Native. Available at https://searchcloudcomputing.techtarget.com/PaaS/Comparing-Two-Schools-of- Application-Development-Traditional-vs-Cloud-Native   
+[4] Richardson C (2015) Building microservices: Using an API gateway. Available at https://www.nginx.com/blog/building-microservices-using-an-api-gateway/  
 [5] Palladino M (2016) Microservices and API gateway, Part 1: Why an API gateway? 
-Available at https://shadrin.org/nginx/blog/content/microservices-api-gateways-part-1- why-an-api-gateway.html 
-[6] Jander K, Braubach L, Pokahr A (2018) Defense in-depth and role authentication for microservice systems. Procedia Computer Science 130:456-463. https://doi.org/10.1016/j.procs.2018.04.047 
-[7] Richardson C (2015) Building microservices: Inter-process communication in a microservices architecture. Available at https://www.nginx.com/blog/building- microservices-inter-process-communication/ 
-[8] Harms H, Rogowski C, Lo Iacono L (2017) Guidelines for adopting frontend architectures and patterns in microservices-based systems. Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (ACM, Paderborn, Germany), pp 902-907. https://doi.org/10.1145/3106237.3117775 
-[9] Montesi F, Weber J (2016) Circuit breakers, discovery, and API gateways in microservices. arXiv preprint. https://arxiv.org/abs/1609.05830v2 
+Available at https://shadrin.org/nginx/blog/content/microservices-api-gateways-part-1- why-an-api-gateway.html  
+[6] Jander K, Braubach L, Pokahr A (2018) Defense in-depth and role authentication for microservice systems. Procedia Computer Science 130:456-463. https://doi.org/10.1016/j.procs.2018.04.047  
+[7] Richardson C (2015) Building microservices: Inter-process communication in a microservices architecture. Available at https://www.nginx.com/blog/building- microservices-inter-process-communication/  
+[8] Harms H, Rogowski C, Lo Iacono L (2017) Guidelines for adopting frontend architectures and patterns in microservices-based systems. Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (ACM, Paderborn, Germany), pp 902-907. https://doi.org/10.1145/3106237.3117775  
+[9] Montesi F, Weber J (2016) Circuit breakers, discovery, and API gateways in microservices. arXiv preprint. https://arxiv.org/abs/1609.05830v2  
 [10] O’Neill M, Malinverno P (2018) Critical capabilities for full life cycle API management. 
-(Gartner, Stamford, CT), ID G00334223. Available at https://www.gartner.com/doc/reprints?id=1-51SE2EK&ct=180601&st=sb 
-[11] Calcote L (2018) The enterprise path to service mesh architectures (O’Reilly Media, 
-Sebastopol, CA). 
-[12] Twistlock (n.d.) Securing the service mesh: Understanding the value of service meshes, why Istio is rising in popularity, and exploring official Twistlock compliance checks for Istio. Available at https://www.twistlock.com/resources/securing-service-mesh-istio- compliance-checks/ 
-[13] Yarygina T, Bagge, AH (2018). Overcoming security challenges in microservice architecture. Proceedings of 2018 IEEE Symposium on Service-Oriented System Engineering (IEEE, Bamberg, Germany), pp 11-20. https://doi.org/10.1109/SOSE.2018.00011 
-[14] OpenID (2019) Welcome to OpenID Connect. Available at https://openid.net/connect/ 
-[15] Hardt D (ed.) (2012) The OAuth 2.0 authorization framework. (Internet Engineering Task Force), IETF Request for Comments (RFC) 6749. https://doi.org/10.17487/RFC6749 
-[16] NGINX (n.d.) High-performance load balancing: Scale out your applications with NGINX and NGINX Plus. Available at https://www.nginx.com/products/nginx/load- balancing/ 
-[17] Katz O (2017) Improving credential abuse threat mitigation. Available at https://blogs.akamai.com/2017/01/improving-credential-abuse-threat-mitigation.html 
-[18] Jones M, Nadalin A, Campbell B (ed.), Bradley J, Mortimore C (2018) OAuth 2.0 token exchange. (Internet Engineering Task Force), IETF Internet-Draft. Available at https://datatracker.ietf.org/doc/draft-ietf-oauth-token-exchange/ 
-[19] Lodderstedt T, Bradley J, Labunets A, Fett D (2019) OAuth 2.0 security best current practice. (Internet Engineering Task Force), IETF Internet-Draft. Available at https://datatracker.ietf.org/doc/draft-ietf-oauth-security-topics/ 
-[20] Jain J (2015) HTTP verb tempering: Bypassing web authentication and authorization. 
-Available at https://resources.infosecinstitute.com/http-verb-tempering-bypassing-web- authentication-and-authorization/ 
+(Gartner, Stamford, CT), ID G00334223. Available at https://www.gartner.com/doc/reprints?id=1-51SE2EK&ct=180601&st=sb  
+[11] Calcote L (2018) The enterprise path to service mesh architectures (O’Reilly Media, Sebastopol, CA).   
+[12] Twistlock (n.d.) Securing the service mesh: Understanding the value of service meshes, why Istio is rising in popularity, and exploring official Twistlock compliance checks for Istio. Available at https://www.twistlock.com/resources/securing-service-mesh-istio- compliance-checks/   
+[13] Yarygina T, Bagge, AH (2018). Overcoming security challenges in microservice architecture. Proceedings of 2018 IEEE Symposium on Service-Oriented System Engineering (IEEE, Bamberg, Germany), pp 11-20. https://doi.org/10.1109/SOSE.2018.00011   
+[14] OpenID (2019) Welcome to OpenID Connect. Available at https://openid.net/connect/   
+[15] Hardt D (ed.) (2012) The OAuth 2.0 authorization framework. (Internet Engineering Task Force), IETF Request for Comments (RFC) 6749. https://doi.org/10.17487/RFC6749  
+[16] NGINX (n.d.) High-performance load balancing: Scale out your applications with NGINX and NGINX Plus. Available at https://www.nginx.com/products/nginx/load- balancing/  
+[17] Katz O (2017) Improving credential abuse threat mitigation. Available at https://blogs.akamai.com/2017/01/improving-credential-abuse-threat-mitigation.html  
+[18] Jones M, Nadalin A, Campbell B (ed.), Bradley J, Mortimore C (2018) OAuth 2.0 token exchange. (Internet Engineering Task Force), IETF Internet-Draft. Available at https://datatracker.ietf.org/doc/draft-ietf-oauth-token-exchange/  
+[19] Lodderstedt T, Bradley J, Labunets A, Fett D (2019) OAuth 2.0 security best current practice. (Internet Engineering Task Force), IETF Internet-Draft. Available at https://datatracker.ietf.org/doc/draft-ietf-oauth-security-topics/  
+[20] Jain J (2015) HTTP verb tempering: Bypassing web authentication and authorization.   
+Available at https://resources.infosecinstitute.com/http-verb-tempering-bypassing-web- authentication-and-authorization/  
 
 
 
